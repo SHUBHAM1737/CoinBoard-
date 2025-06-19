@@ -2,7 +2,7 @@ import { NeynarAPIClient } from "@neynar/nodejs-sdk";
 import { sendTipOnChain } from "../../utils/sendTipOnChain";
 
 
-const client = new NeynarAPIClient(process.env.NEYNAR_API_KEY);
+const client = new NeynarAPIClient({ apiKey: process.env.NEYNAR_API_KEY });
 
 export default async function handler(req, res) {
   try {
