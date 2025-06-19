@@ -1,5 +1,6 @@
 import { NeynarAPIClient } from "@neynar/nodejs-sdk";
-import { sendTipOnChain } from "@/utils/sendTipOnChain";
+import { sendTipOnChain } from "../../utils/sendTipOnChain";
+
 
 const client = new NeynarAPIClient(process.env.NEYNAR_API_KEY);
 
